@@ -1,0 +1,23 @@
+{
+  "name": "nyc-coverage-0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test nyc mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cross-env": "^5.2.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.0.0"
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "src/*.js"
+    ]
+  }
+}
